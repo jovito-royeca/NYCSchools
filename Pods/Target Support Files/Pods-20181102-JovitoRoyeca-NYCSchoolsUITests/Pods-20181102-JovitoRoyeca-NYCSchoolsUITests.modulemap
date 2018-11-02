@@ -1,0 +1,6 @@
+framework module Pods_20181102_JovitoRoyeca_NYCSchoolsUITests {
+  umbrella header "Pods-20181102-JovitoRoyeca-NYCSchoolsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

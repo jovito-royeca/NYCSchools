@@ -32,6 +32,9 @@
 		115D4E7D218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */; };
 		115D4E7E218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */; };
 		115D4E7F218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */; };
+		8C527F0907FD86297BA6FF6C /* Pods_20181102_JovitoRoyeca_NYCSchoolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FC9F7FC8E643A06E41BB4B /* Pods_20181102_JovitoRoyeca_NYCSchoolsTests.framework */; };
+		B07F5D8D9DD11D433C74D3B5 /* Pods_20181102_JovitoRoyeca_NYCSchools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A465603B9819850F9B2F759B /* Pods_20181102_JovitoRoyeca_NYCSchools.framework */; };
+		C11C5E1F3AF71074014AB1E1 /* Pods_20181102_JovitoRoyeca_NYCSchoolsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B76A0AEEDBAC8598F414D9F /* Pods_20181102_JovitoRoyeca_NYCSchoolsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,15 @@
 		115D4E74218CC629006A94EE /* SchoolsMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsMapViewModel.swift; sourceTree = "<group>"; };
 		115D4E78218CC66A006A94EE /* SchoolsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsListViewModel.swift; sourceTree = "<group>"; };
 		115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewModel.swift; sourceTree = "<group>"; };
+		2E9E0F57DEEBB4D3417ADB6D /* Pods-20181102-JovitoRoyeca-NYCSchoolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20181102-JovitoRoyeca-NYCSchoolsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchoolsTests/Pods-20181102-JovitoRoyeca-NYCSchoolsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41560A8AC336844C1B02F99F /* Pods-20181102-JovitoRoyeca-NYCSchools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20181102-JovitoRoyeca-NYCSchools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchools/Pods-20181102-JovitoRoyeca-NYCSchools.debug.xcconfig"; sourceTree = "<group>"; };
+		718D19233F5A52CAF3D9304A /* Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchoolsUITests/Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B76A0AEEDBAC8598F414D9F /* Pods_20181102_JovitoRoyeca_NYCSchoolsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20181102_JovitoRoyeca_NYCSchoolsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EE3F3100B961862B2131150 /* Pods-20181102-JovitoRoyeca-NYCSchoolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20181102-JovitoRoyeca-NYCSchoolsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchoolsTests/Pods-20181102-JovitoRoyeca-NYCSchoolsTests.release.xcconfig"; sourceTree = "<group>"; };
+		A465603B9819850F9B2F759B /* Pods_20181102_JovitoRoyeca_NYCSchools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20181102_JovitoRoyeca_NYCSchools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F46AF2E1AD2FA5DB9B8AC4 /* Pods-20181102-JovitoRoyeca-NYCSchools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20181102-JovitoRoyeca-NYCSchools.release.xcconfig"; path = "Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchools/Pods-20181102-JovitoRoyeca-NYCSchools.release.xcconfig"; sourceTree = "<group>"; };
+		F0FC9F7FC8E643A06E41BB4B /* Pods_20181102_JovitoRoyeca_NYCSchoolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20181102_JovitoRoyeca_NYCSchoolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3808F827C96DED4BD3672AB /* Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchoolsUITests/Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07F5D8D9DD11D433C74D3B5 /* Pods_20181102_JovitoRoyeca_NYCSchools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C527F0907FD86297BA6FF6C /* Pods_20181102_JovitoRoyeca_NYCSchoolsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11C5E1F3AF71074014AB1E1 /* Pods_20181102_JovitoRoyeca_NYCSchoolsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +120,8 @@
 				115D4E4B218CC25B006A94EE /* 20181102-JovitoRoyeca-NYCSchoolsTests */,
 				115D4E56218CC25B006A94EE /* 20181102-JovitoRoyeca-NYCSchoolsUITests */,
 				115D4E35218CC259006A94EE /* Products */,
+				E85F52014F8F24FCD6F1C5F3 /* Pods */,
+				8BDC16D217317C2CB659A5B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +141,7 @@
 				115D4E66218CC3C0006A94EE /* Schools List */,
 				115D4E65218CC3B6006A94EE /* Schools Map */,
 				115D4E67218CC3CD006A94EE /* School Details */,
+				115D4E82218CC9A7006A94EE /* API */,
 				115D4E80218CC6A1006A94EE /* Models */,
 				115D4E81218CC6AD006A94EE /* Views */,
 				115D4E37218CC259006A94EE /* AppDelegate.swift */,
@@ -195,6 +213,36 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		115D4E82218CC9A7006A94EE /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8BDC16D217317C2CB659A5B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A465603B9819850F9B2F759B /* Pods_20181102_JovitoRoyeca_NYCSchools.framework */,
+				F0FC9F7FC8E643A06E41BB4B /* Pods_20181102_JovitoRoyeca_NYCSchoolsTests.framework */,
+				8B76A0AEEDBAC8598F414D9F /* Pods_20181102_JovitoRoyeca_NYCSchoolsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E85F52014F8F24FCD6F1C5F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41560A8AC336844C1B02F99F /* Pods-20181102-JovitoRoyeca-NYCSchools.debug.xcconfig */,
+				B7F46AF2E1AD2FA5DB9B8AC4 /* Pods-20181102-JovitoRoyeca-NYCSchools.release.xcconfig */,
+				2E9E0F57DEEBB4D3417ADB6D /* Pods-20181102-JovitoRoyeca-NYCSchoolsTests.debug.xcconfig */,
+				9EE3F3100B961862B2131150 /* Pods-20181102-JovitoRoyeca-NYCSchoolsTests.release.xcconfig */,
+				718D19233F5A52CAF3D9304A /* Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.debug.xcconfig */,
+				F3808F827C96DED4BD3672AB /* Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 115D4E5C218CC25B006A94EE /* Build configuration list for PBXNativeTarget "20181102-JovitoRoyeca-NYCSchools" */;
 			buildPhases = (
+				BF580EFDFD26B2EA1510FB8A /* [CP] Check Pods Manifest.lock */,
 				115D4E30218CC259006A94EE /* Sources */,
 				115D4E31218CC259006A94EE /* Frameworks */,
 				115D4E32218CC259006A94EE /* Resources */,
+				9B015D9D7B4B613614187A66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 115D4E5F218CC25B006A94EE /* Build configuration list for PBXNativeTarget "20181102-JovitoRoyeca-NYCSchoolsTests" */;
 			buildPhases = (
+				90F4E927EE7AA7F18FBCBCFB /* [CP] Check Pods Manifest.lock */,
 				115D4E44218CC25B006A94EE /* Sources */,
 				115D4E45218CC25B006A94EE /* Frameworks */,
 				115D4E46218CC25B006A94EE /* Resources */,
@@ -237,6 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 115D4E62218CC25B006A94EE /* Build configuration list for PBXNativeTarget "20181102-JovitoRoyeca-NYCSchoolsUITests" */;
 			buildPhases = (
+				765B10B5763D55ABAFA8B6A8 /* [CP] Check Pods Manifest.lock */,
 				115D4E4F218CC25B006A94EE /* Sources */,
 				115D4E50218CC25B006A94EE /* Frameworks */,
 				115D4E51218CC25B006A94EE /* Resources */,
@@ -320,6 +372,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		765B10B5763D55ABAFA8B6A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-20181102-JovitoRoyeca-NYCSchoolsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90F4E927EE7AA7F18FBCBCFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-20181102-JovitoRoyeca-NYCSchoolsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B015D9D7B4B613614187A66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchools/Pods-20181102-JovitoRoyeca-NYCSchools-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Sync/Sync.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sync.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchools/Pods-20181102-JovitoRoyeca-NYCSchools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF580EFDFD26B2EA1510FB8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-20181102-JovitoRoyeca-NYCSchools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		115D4E30218CC259006A94EE /* Sources */ = {
@@ -518,16 +651,20 @@
 		};
 		115D4E5D218CC25B006A94EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41560A8AC336844C1B02F99F /* Pods-20181102-JovitoRoyeca-NYCSchools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "20181102-JovitoRoyeca-NYCSchools/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jovitoroyeca.-0181102-JovitoRoyeca-NYCSchools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -535,16 +672,20 @@
 		};
 		115D4E5E218CC25B006A94EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7F46AF2E1AD2FA5DB9B8AC4 /* Pods-20181102-JovitoRoyeca-NYCSchools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "20181102-JovitoRoyeca-NYCSchools/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jovitoroyeca.-0181102-JovitoRoyeca-NYCSchools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -552,10 +693,12 @@
 		};
 		115D4E60218CC25B006A94EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9E0F57DEEBB4D3417ADB6D /* Pods-20181102-JovitoRoyeca-NYCSchoolsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "20181102-JovitoRoyeca-NYCSchoolsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,6 +707,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jovitoroyeca.-0181102-JovitoRoyeca-NYCSchoolsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/20181102-JovitoRoyeca-NYCSchools.app/20181102-JovitoRoyeca-NYCSchools";
@@ -572,10 +716,12 @@
 		};
 		115D4E61218CC25B006A94EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EE3F3100B961862B2131150 /* Pods-20181102-JovitoRoyeca-NYCSchoolsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "20181102-JovitoRoyeca-NYCSchoolsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,6 +730,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jovitoroyeca.-0181102-JovitoRoyeca-NYCSchoolsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/20181102-JovitoRoyeca-NYCSchools.app/20181102-JovitoRoyeca-NYCSchools";
@@ -592,9 +739,11 @@
 		};
 		115D4E63218CC25B006A94EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718D19233F5A52CAF3D9304A /* Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "20181102-JovitoRoyeca-NYCSchoolsUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,6 +752,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jovitoroyeca.-0181102-JovitoRoyeca-NYCSchoolsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "20181102-JovitoRoyeca-NYCSchools";
@@ -611,9 +761,11 @@
 		};
 		115D4E64218CC25B006A94EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3808F827C96DED4BD3672AB /* Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "20181102-JovitoRoyeca-NYCSchoolsUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -622,6 +774,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jovitoroyeca.-0181102-JovitoRoyeca-NYCSchoolsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "20181102-JovitoRoyeca-NYCSchools";

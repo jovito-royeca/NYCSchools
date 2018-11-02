@@ -1,0 +1,36 @@
+PODS:
+  - FontAwesome.swift (1.4.5)
+  - MBProgressHUD (1.1.0)
+  - PromiseKit (6.5.2):
+    - PromiseKit/CorePromise (= 6.5.2)
+    - PromiseKit/Foundation (= 6.5.2)
+    - PromiseKit/UIKit (= 6.5.2)
+  - PromiseKit/CorePromise (6.5.2)
+  - PromiseKit/Foundation (6.5.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.5.2):
+    - PromiseKit/CorePromise
+  - Sync (5.1.0)
+
+DEPENDENCIES:
+  - FontAwesome.swift
+  - MBProgressHUD
+  - PromiseKit
+  - Sync
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FontAwesome.swift
+    - MBProgressHUD
+    - PromiseKit
+    - Sync
+
+SPEC CHECKSUMS:
+  FontAwesome.swift: a351dbb86b9fcec9aad6bce2fdd5b95e9a7b8828
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  PromiseKit: 27c1601bfb73405871b805bcb8cf7e55c4dad3db
+  Sync: 0412c2b068eb7cf1a04607e948ef92cbd6114d0f
+
+PODFILE CHECKSUM: 1eb00129968c7b01289f55ca7bd61f5d8efac903
+
+COCOAPODS: 1.5.3
