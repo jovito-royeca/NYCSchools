@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		115D4E38218CC259006A94EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E37218CC259006A94EE /* AppDelegate.swift */; };
-		115D4E3A218CC259006A94EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E39218CC259006A94EE /* ViewController.swift */; };
+		115D4E3A218CC259006A94EE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E39218CC259006A94EE /* MainViewController.swift */; };
 		115D4E3D218CC259006A94EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D4E3B218CC259006A94EE /* Main.storyboard */; };
 		115D4E3F218CC25A006A94EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115D4E3E218CC25A006A94EE /* Assets.xcassets */; };
 		115D4E42218CC25A006A94EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D4E40218CC25A006A94EE /* LaunchScreen.storyboard */; };
 		115D4E4D218CC25B006A94EE /* _0181102_JovitoRoyeca_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E4C218CC25B006A94EE /* _0181102_JovitoRoyeca_NYCSchoolsTests.swift */; };
 		115D4E58218CC25B006A94EE /* _0181102_JovitoRoyeca_NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E57218CC25B006A94EE /* _0181102_JovitoRoyeca_NYCSchoolsUITests.swift */; };
+		115D4E69218CC3FD006A94EE /* SchoolsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E68218CC3FD006A94EE /* SchoolsMapViewController.swift */; };
+		115D4E6A218CC3FD006A94EE /* SchoolsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E68218CC3FD006A94EE /* SchoolsMapViewController.swift */; };
+		115D4E6B218CC3FD006A94EE /* SchoolsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E68218CC3FD006A94EE /* SchoolsMapViewController.swift */; };
+		115D4E6D218CC40A006A94EE /* SchoolsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E6C218CC40A006A94EE /* SchoolsListViewController.swift */; };
+		115D4E6E218CC40A006A94EE /* SchoolsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E6C218CC40A006A94EE /* SchoolsListViewController.swift */; };
+		115D4E6F218CC40A006A94EE /* SchoolsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E6C218CC40A006A94EE /* SchoolsListViewController.swift */; };
+		115D4E71218CC417006A94EE /* SchoolDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E70218CC417006A94EE /* SchoolDetailsViewController.swift */; };
+		115D4E72218CC417006A94EE /* SchoolDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E70218CC417006A94EE /* SchoolDetailsViewController.swift */; };
+		115D4E73218CC417006A94EE /* SchoolDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E70218CC417006A94EE /* SchoolDetailsViewController.swift */; };
+		115D4E75218CC629006A94EE /* SchoolsMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E74218CC629006A94EE /* SchoolsMapViewModel.swift */; };
+		115D4E76218CC629006A94EE /* SchoolsMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E74218CC629006A94EE /* SchoolsMapViewModel.swift */; };
+		115D4E77218CC629006A94EE /* SchoolsMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E74218CC629006A94EE /* SchoolsMapViewModel.swift */; };
+		115D4E79218CC66A006A94EE /* SchoolsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E78218CC66A006A94EE /* SchoolsListViewModel.swift */; };
+		115D4E7A218CC66A006A94EE /* SchoolsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E78218CC66A006A94EE /* SchoolsListViewModel.swift */; };
+		115D4E7B218CC66A006A94EE /* SchoolsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E78218CC66A006A94EE /* SchoolsListViewModel.swift */; };
+		115D4E7D218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */; };
+		115D4E7E218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */; };
+		115D4E7F218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +54,7 @@
 /* Begin PBXFileReference section */
 		115D4E34218CC259006A94EE /* 20181102-JovitoRoyeca-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20181102-JovitoRoyeca-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		115D4E37218CC259006A94EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		115D4E39218CC259006A94EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		115D4E39218CC259006A94EE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		115D4E3C218CC259006A94EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		115D4E3E218CC25A006A94EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115D4E41218CC25A006A94EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +65,12 @@
 		115D4E53218CC25B006A94EE /* 20181102-JovitoRoyeca-NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20181102-JovitoRoyeca-NYCSchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		115D4E57218CC25B006A94EE /* _0181102_JovitoRoyeca_NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0181102_JovitoRoyeca_NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		115D4E59218CC25B006A94EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115D4E68218CC3FD006A94EE /* SchoolsMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsMapViewController.swift; sourceTree = "<group>"; };
+		115D4E6C218CC40A006A94EE /* SchoolsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsListViewController.swift; sourceTree = "<group>"; };
+		115D4E70218CC417006A94EE /* SchoolDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewController.swift; sourceTree = "<group>"; };
+		115D4E74218CC629006A94EE /* SchoolsMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsMapViewModel.swift; sourceTree = "<group>"; };
+		115D4E78218CC66A006A94EE /* SchoolsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsListViewModel.swift; sourceTree = "<group>"; };
+		115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +121,12 @@
 		115D4E36218CC259006A94EE /* 20181102-JovitoRoyeca-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				115D4E66218CC3C0006A94EE /* Schools List */,
+				115D4E65218CC3B6006A94EE /* Schools Map */,
+				115D4E67218CC3CD006A94EE /* School Details */,
+				115D4E80218CC6A1006A94EE /* Models */,
+				115D4E81218CC6AD006A94EE /* Views */,
 				115D4E37218CC259006A94EE /* AppDelegate.swift */,
-				115D4E39218CC259006A94EE /* ViewController.swift */,
-				115D4E3B218CC259006A94EE /* Main.storyboard */,
 				115D4E3E218CC25A006A94EE /* Assets.xcassets */,
 				115D4E40218CC25A006A94EE /* LaunchScreen.storyboard */,
 				115D4E43218CC25A006A94EE /* Info.plist */,
@@ -123,6 +150,49 @@
 				115D4E59218CC25B006A94EE /* Info.plist */,
 			);
 			path = "20181102-JovitoRoyeca-NYCSchoolsUITests";
+			sourceTree = "<group>";
+		};
+		115D4E65218CC3B6006A94EE /* Schools Map */ = {
+			isa = PBXGroup;
+			children = (
+				115D4E68218CC3FD006A94EE /* SchoolsMapViewController.swift */,
+				115D4E74218CC629006A94EE /* SchoolsMapViewModel.swift */,
+			);
+			path = "Schools Map";
+			sourceTree = "<group>";
+		};
+		115D4E66218CC3C0006A94EE /* Schools List */ = {
+			isa = PBXGroup;
+			children = (
+				115D4E6C218CC40A006A94EE /* SchoolsListViewController.swift */,
+				115D4E78218CC66A006A94EE /* SchoolsListViewModel.swift */,
+			);
+			path = "Schools List";
+			sourceTree = "<group>";
+		};
+		115D4E67218CC3CD006A94EE /* School Details */ = {
+			isa = PBXGroup;
+			children = (
+				115D4E70218CC417006A94EE /* SchoolDetailsViewController.swift */,
+				115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */,
+			);
+			path = "School Details";
+			sourceTree = "<group>";
+		};
+		115D4E80218CC6A1006A94EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		115D4E81218CC6AD006A94EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				115D4E3B218CC259006A94EE /* Main.storyboard */,
+				115D4E39218CC259006A94EE /* MainViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115D4E3A218CC259006A94EE /* ViewController.swift in Sources */,
+				115D4E3A218CC259006A94EE /* MainViewController.swift in Sources */,
+				115D4E7D218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */,
+				115D4E69218CC3FD006A94EE /* SchoolsMapViewController.swift in Sources */,
+				115D4E6D218CC40A006A94EE /* SchoolsListViewController.swift in Sources */,
 				115D4E38218CC259006A94EE /* AppDelegate.swift in Sources */,
+				115D4E71218CC417006A94EE /* SchoolDetailsViewController.swift in Sources */,
+				115D4E75218CC629006A94EE /* SchoolsMapViewModel.swift in Sources */,
+				115D4E79218CC66A006A94EE /* SchoolsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +341,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115D4E7A218CC66A006A94EE /* SchoolsListViewModel.swift in Sources */,
+				115D4E76218CC629006A94EE /* SchoolsMapViewModel.swift in Sources */,
 				115D4E4D218CC25B006A94EE /* _0181102_JovitoRoyeca_NYCSchoolsTests.swift in Sources */,
+				115D4E6A218CC3FD006A94EE /* SchoolsMapViewController.swift in Sources */,
+				115D4E7E218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */,
+				115D4E6E218CC40A006A94EE /* SchoolsListViewController.swift in Sources */,
+				115D4E72218CC417006A94EE /* SchoolDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +355,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115D4E7B218CC66A006A94EE /* SchoolsListViewModel.swift in Sources */,
+				115D4E77218CC629006A94EE /* SchoolsMapViewModel.swift in Sources */,
 				115D4E58218CC25B006A94EE /* _0181102_JovitoRoyeca_NYCSchoolsUITests.swift in Sources */,
+				115D4E6B218CC3FD006A94EE /* SchoolsMapViewController.swift in Sources */,
+				115D4E7F218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */,
+				115D4E6F218CC40A006A94EE /* SchoolsListViewController.swift in Sources */,
+				115D4E73218CC417006A94EE /* SchoolDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
