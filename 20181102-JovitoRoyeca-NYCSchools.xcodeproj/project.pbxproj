@@ -32,6 +32,27 @@
 		115D4E7D218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */; };
 		115D4E7E218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */; };
 		115D4E7F218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */; };
+		115D4E85218CCB29006A94EE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E83218CCB29006A94EE /* Model.xcdatamodeld */; };
+		115D4E86218CCB29006A94EE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E83218CCB29006A94EE /* Model.xcdatamodeld */; };
+		115D4E87218CCB29006A94EE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E83218CCB29006A94EE /* Model.xcdatamodeld */; };
+		115D4E8C218E6625006A94EE /* SATResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E88218E6625006A94EE /* SATResult+CoreDataClass.swift */; };
+		115D4E8D218E6625006A94EE /* SATResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E88218E6625006A94EE /* SATResult+CoreDataClass.swift */; };
+		115D4E8E218E6625006A94EE /* SATResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E88218E6625006A94EE /* SATResult+CoreDataClass.swift */; };
+		115D4E8F218E6625006A94EE /* SATResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E89218E6625006A94EE /* SATResult+CoreDataProperties.swift */; };
+		115D4E90218E6625006A94EE /* SATResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E89218E6625006A94EE /* SATResult+CoreDataProperties.swift */; };
+		115D4E91218E6625006A94EE /* SATResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E89218E6625006A94EE /* SATResult+CoreDataProperties.swift */; };
+		115D4E92218E6625006A94EE /* School+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E8A218E6625006A94EE /* School+CoreDataClass.swift */; };
+		115D4E93218E6625006A94EE /* School+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E8A218E6625006A94EE /* School+CoreDataClass.swift */; };
+		115D4E94218E6625006A94EE /* School+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E8A218E6625006A94EE /* School+CoreDataClass.swift */; };
+		115D4E95218E6625006A94EE /* School+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E8B218E6625006A94EE /* School+CoreDataProperties.swift */; };
+		115D4E96218E6625006A94EE /* School+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E8B218E6625006A94EE /* School+CoreDataProperties.swift */; };
+		115D4E97218E6625006A94EE /* School+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E8B218E6625006A94EE /* School+CoreDataProperties.swift */; };
+		115D4E9A218E6660006A94EE /* WebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E98218E6660006A94EE /* WebServiceAPI.swift */; };
+		115D4E9B218E6660006A94EE /* WebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E98218E6660006A94EE /* WebServiceAPI.swift */; };
+		115D4E9C218E6660006A94EE /* WebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E98218E6660006A94EE /* WebServiceAPI.swift */; };
+		115D4E9D218E6660006A94EE /* CoreDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E99218E6660006A94EE /* CoreDataAPI.swift */; };
+		115D4E9E218E6660006A94EE /* CoreDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E99218E6660006A94EE /* CoreDataAPI.swift */; };
+		115D4E9F218E6660006A94EE /* CoreDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4E99218E6660006A94EE /* CoreDataAPI.swift */; };
 		8C527F0907FD86297BA6FF6C /* Pods_20181102_JovitoRoyeca_NYCSchoolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FC9F7FC8E643A06E41BB4B /* Pods_20181102_JovitoRoyeca_NYCSchoolsTests.framework */; };
 		B07F5D8D9DD11D433C74D3B5 /* Pods_20181102_JovitoRoyeca_NYCSchools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A465603B9819850F9B2F759B /* Pods_20181102_JovitoRoyeca_NYCSchools.framework */; };
 		C11C5E1F3AF71074014AB1E1 /* Pods_20181102_JovitoRoyeca_NYCSchoolsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B76A0AEEDBAC8598F414D9F /* Pods_20181102_JovitoRoyeca_NYCSchoolsUITests.framework */; };
@@ -74,6 +95,13 @@
 		115D4E74218CC629006A94EE /* SchoolsMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsMapViewModel.swift; sourceTree = "<group>"; };
 		115D4E78218CC66A006A94EE /* SchoolsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsListViewModel.swift; sourceTree = "<group>"; };
 		115D4E7C218CC681006A94EE /* SchoolDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewModel.swift; sourceTree = "<group>"; };
+		115D4E84218CCB29006A94EE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		115D4E88218E6625006A94EE /* SATResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SATResult+CoreDataClass.swift"; sourceTree = "<group>"; };
+		115D4E89218E6625006A94EE /* SATResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SATResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		115D4E8A218E6625006A94EE /* School+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "School+CoreDataClass.swift"; sourceTree = "<group>"; };
+		115D4E8B218E6625006A94EE /* School+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "School+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		115D4E98218E6660006A94EE /* WebServiceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceAPI.swift; sourceTree = "<group>"; };
+		115D4E99218E6660006A94EE /* CoreDataAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataAPI.swift; sourceTree = "<group>"; };
 		2E9E0F57DEEBB4D3417ADB6D /* Pods-20181102-JovitoRoyeca-NYCSchoolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20181102-JovitoRoyeca-NYCSchoolsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchoolsTests/Pods-20181102-JovitoRoyeca-NYCSchoolsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		41560A8AC336844C1B02F99F /* Pods-20181102-JovitoRoyeca-NYCSchools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20181102-JovitoRoyeca-NYCSchools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchools/Pods-20181102-JovitoRoyeca-NYCSchools.debug.xcconfig"; sourceTree = "<group>"; };
 		718D19233F5A52CAF3D9304A /* Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20181102-JovitoRoyeca-NYCSchoolsUITests/Pods-20181102-JovitoRoyeca-NYCSchoolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +228,11 @@
 		115D4E80218CC6A1006A94EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				115D4E88218E6625006A94EE /* SATResult+CoreDataClass.swift */,
+				115D4E89218E6625006A94EE /* SATResult+CoreDataProperties.swift */,
+				115D4E8A218E6625006A94EE /* School+CoreDataClass.swift */,
+				115D4E8B218E6625006A94EE /* School+CoreDataProperties.swift */,
+				115D4E83218CCB29006A94EE /* Model.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +249,8 @@
 		115D4E82218CC9A7006A94EE /* API */ = {
 			isa = PBXGroup;
 			children = (
+				115D4E99218E6660006A94EE /* CoreDataAPI.swift */,
+				115D4E98218E6660006A94EE /* WebServiceAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -460,12 +495,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				115D4E3A218CC259006A94EE /* MainViewController.swift in Sources */,
+				115D4E9A218E6660006A94EE /* WebServiceAPI.swift in Sources */,
 				115D4E7D218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */,
 				115D4E69218CC3FD006A94EE /* SchoolsMapViewController.swift in Sources */,
+				115D4E8C218E6625006A94EE /* SATResult+CoreDataClass.swift in Sources */,
+				115D4E95218E6625006A94EE /* School+CoreDataProperties.swift in Sources */,
 				115D4E6D218CC40A006A94EE /* SchoolsListViewController.swift in Sources */,
+				115D4E8F218E6625006A94EE /* SATResult+CoreDataProperties.swift in Sources */,
 				115D4E38218CC259006A94EE /* AppDelegate.swift in Sources */,
+				115D4E85218CCB29006A94EE /* Model.xcdatamodeld in Sources */,
 				115D4E71218CC417006A94EE /* SchoolDetailsViewController.swift in Sources */,
+				115D4E92218E6625006A94EE /* School+CoreDataClass.swift in Sources */,
 				115D4E75218CC629006A94EE /* SchoolsMapViewModel.swift in Sources */,
+				115D4E9D218E6660006A94EE /* CoreDataAPI.swift in Sources */,
 				115D4E79218CC66A006A94EE /* SchoolsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,9 +518,16 @@
 			files = (
 				115D4E7A218CC66A006A94EE /* SchoolsListViewModel.swift in Sources */,
 				115D4E76218CC629006A94EE /* SchoolsMapViewModel.swift in Sources */,
+				115D4E8D218E6625006A94EE /* SATResult+CoreDataClass.swift in Sources */,
+				115D4E9E218E6660006A94EE /* CoreDataAPI.swift in Sources */,
 				115D4E4D218CC25B006A94EE /* _0181102_JovitoRoyeca_NYCSchoolsTests.swift in Sources */,
+				115D4E86218CCB29006A94EE /* Model.xcdatamodeld in Sources */,
 				115D4E6A218CC3FD006A94EE /* SchoolsMapViewController.swift in Sources */,
+				115D4E93218E6625006A94EE /* School+CoreDataClass.swift in Sources */,
+				115D4E9B218E6660006A94EE /* WebServiceAPI.swift in Sources */,
 				115D4E7E218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */,
+				115D4E90218E6625006A94EE /* SATResult+CoreDataProperties.swift in Sources */,
+				115D4E96218E6625006A94EE /* School+CoreDataProperties.swift in Sources */,
 				115D4E6E218CC40A006A94EE /* SchoolsListViewController.swift in Sources */,
 				115D4E72218CC417006A94EE /* SchoolDetailsViewController.swift in Sources */,
 			);
@@ -490,9 +539,16 @@
 			files = (
 				115D4E7B218CC66A006A94EE /* SchoolsListViewModel.swift in Sources */,
 				115D4E77218CC629006A94EE /* SchoolsMapViewModel.swift in Sources */,
+				115D4E8E218E6625006A94EE /* SATResult+CoreDataClass.swift in Sources */,
+				115D4E9F218E6660006A94EE /* CoreDataAPI.swift in Sources */,
 				115D4E58218CC25B006A94EE /* _0181102_JovitoRoyeca_NYCSchoolsUITests.swift in Sources */,
+				115D4E87218CCB29006A94EE /* Model.xcdatamodeld in Sources */,
 				115D4E6B218CC3FD006A94EE /* SchoolsMapViewController.swift in Sources */,
+				115D4E94218E6625006A94EE /* School+CoreDataClass.swift in Sources */,
+				115D4E9C218E6660006A94EE /* WebServiceAPI.swift in Sources */,
 				115D4E7F218CC681006A94EE /* SchoolDetailsViewModel.swift in Sources */,
+				115D4E91218E6625006A94EE /* SATResult+CoreDataProperties.swift in Sources */,
+				115D4E97218E6625006A94EE /* School+CoreDataProperties.swift in Sources */,
 				115D4E6F218CC40A006A94EE /* SchoolsListViewController.swift in Sources */,
 				115D4E73218CC417006A94EE /* SchoolDetailsViewController.swift in Sources */,
 			);
@@ -821,6 +877,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		115D4E83218CCB29006A94EE /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				115D4E84218CCB29006A94EE /* Model.xcdatamodel */,
+			);
+			currentVersion = 115D4E84218CCB29006A94EE /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 115D4E2C218CC259006A94EE /* Project object */;
 }
