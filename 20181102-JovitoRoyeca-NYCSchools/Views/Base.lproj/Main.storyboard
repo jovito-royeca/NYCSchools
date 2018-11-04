@@ -61,6 +61,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nDW-Kl-2fR" id="pbe-31-VEd"/>
+                                    <outlet property="delegate" destination="nDW-Kl-2fR" id="Rje-Kt-FD0"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,6 +78,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="List" id="v1H-xO-awp"/>
                     <connections>
+                        <outlet property="tableView" destination="ujK-an-51j" id="YPT-kI-pBF"/>
                         <segue destination="VHh-gm-BYY" kind="show" identifier="showDetails" id="9Xe-kL-N8o"/>
                     </connections>
                 </viewController>

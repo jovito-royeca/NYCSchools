@@ -49,6 +49,7 @@ extension School {
     @NSManaged public var location: String?
     @NSManaged public var longitude: Double
     @NSManaged public var method1: String?
+    @NSManaged public var nameSection: String?
     @NSManaged public var neighborhood: String?
     @NSManaged public var nta: String?
     @NSManaged public var offerRate1: String?

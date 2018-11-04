@@ -53,6 +53,7 @@
         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="method1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameSection" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="neighborhood" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nta" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="offerRate1" optional="YES" attributeType="String" syncable="YES"/>
@@ -83,6 +84,6 @@
     </entity>
     <elements>
         <element name="SATResult" positionX="-54" positionY="-9" width="128" height="150"/>
-        <element name="School" positionX="-63" positionY="-18" width="128" height="945"/>
+        <element name="School" positionX="-63" positionY="-18" width="128" height="960"/>
     </elements>
 </model>
