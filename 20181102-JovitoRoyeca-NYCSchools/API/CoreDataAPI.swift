@@ -55,7 +55,7 @@ class CoreDataAPI: NSObject {
     }
     
     /*
-     * Save JSON to Core Data
+     * Save schools JSON to Core Data
      */
     func saveSchools(json: [[String: Any]]) -> Promise<Void> {
         return Promise { seal  in
@@ -113,7 +113,7 @@ class CoreDataAPI: NSObject {
     }
     
     /*
-     * Save JSON to Core Data
+     * Save SAT Results JSON to Core Data
      */
     func saveSATResults(json: [[String: Any]]) {
         let context = dataStack!.mainContext

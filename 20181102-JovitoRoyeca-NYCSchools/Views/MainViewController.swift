@@ -19,6 +19,7 @@ class MainViewController: UITabBarController {
             return
         }
         
+        // add icons to our tabs
         items[0].image = UIImage.fontAwesomeIcon(name: .map,
                                                  style: .solid,
                                                  textColor: UIColor.blue,

@@ -18,6 +18,11 @@ class SchoolsMapViewController: UIViewController {
 
     // MARK: Variables
     let viewModel = SchoolsMapViewModel()
+    
+    /*
+     * Name of school if we are selecting from School Details.
+     * This lone school will be displayed
+     */
     var schoolName = ""
 
     // MARK: Outlets
@@ -44,6 +49,8 @@ class SchoolsMapViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
         if segue.identifier == "showDetails" {
             guard let dest = segue.destination as? SchoolDetailsViewController,
                 let school = sender as? School else {
@@ -54,16 +61,6 @@ class SchoolsMapViewController: UIViewController {
             dest.viewModel = viewModel
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     // MARK: Custom methods
     func addPinsToMap() {
@@ -90,6 +87,9 @@ class SchoolsMapViewController: UIViewController {
         }
     }
 
+    /*
+     * Fetch data from web API
+     */
     func fetchData() {
         let webService = WebServiceAPI()
         
@@ -104,6 +104,9 @@ class SchoolsMapViewController: UIViewController {
         }
     }
     
+    /*
+     * Save JSON to Core Data
+     */
     func saveData(schools: [[String: Any]], satResults: [[String: Any]]) {
         firstly {
             CoreDataAPI.sharedInstance.saveSchools(json: schools)
@@ -119,6 +122,7 @@ class SchoolsMapViewController: UIViewController {
     }
 }
 
+// MARK: MKMapViewDelegate
 extension SchoolsMapViewController : MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "school")
@@ -133,8 +137,6 @@ extension SchoolsMapViewController : MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        
-        
         guard let annotation = view.annotation,
             let name = annotation.title as? String,
             let school = viewModel.object(forName: name,
@@ -142,7 +144,8 @@ extension SchoolsMapViewController : MKMapViewDelegate {
                                           lontitude: annotation.coordinate.longitude) else {
             return
         }
-        
+
+        // show school in map
         performSegue(withIdentifier: "showDetails", sender: school)
     }
 }

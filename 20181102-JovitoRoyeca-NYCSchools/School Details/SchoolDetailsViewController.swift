@@ -20,6 +20,9 @@ class SchoolDetailsViewController: UIViewController {
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
         if segue.identifier == "showMap" {
             guard let dest = segue.destination as? SchoolsMapViewController,
                 let schoolName = sender as? String else {
@@ -29,17 +32,6 @@ class SchoolDetailsViewController: UIViewController {
             dest.schoolName = schoolName
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 // MARK: UITableViewDataSource
@@ -172,19 +164,22 @@ extension SchoolDetailsViewController : UITableViewDelegate {
         switch indexPath.section {
         case SchoolDetailsViewModel.Sections.school.rawValue:
             switch indexPath.row {
+            // show single school in map
             case SchoolDetailsViewModel.SchoolDetails.address.rawValue:
                 performSegue(withIdentifier: "showMap", sender: viewModel.name())
-                
+            
+            // call phone number
             case SchoolDetailsViewModel.SchoolDetails.phone.rawValue:
-                // call phone number
+                
                 if let phone = viewModel.phone(),
                     let url = URL(string: "tel://\(phone)"),
                     UIApplication.shared.canOpenURL(url) {
                     UIApplication.shared.open(url, options: [:], completionHandler: nil)
                 }
                 
+            // open website
             case SchoolDetailsViewModel.SchoolDetails.website.rawValue:
-                // open website
+                
                 if let website = viewModel.website(),
                     let url = URL(string: "http://\(website)"),
                     UIApplication.shared.canOpenURL(url) {

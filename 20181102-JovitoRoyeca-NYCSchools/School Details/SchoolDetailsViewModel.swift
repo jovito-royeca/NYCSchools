@@ -80,7 +80,7 @@ class SchoolDetailsViewModel: NSObject {
         _school = school
     }
     
-    // MARK: Custom methods
+    // MARK: Accesors to our model
     func name() -> String? {
         return _school!.schoolName
     }
