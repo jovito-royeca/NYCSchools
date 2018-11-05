@@ -30,6 +30,7 @@ class SchoolDetailsViewModel: NSObject {
     
     enum SchoolDetails: Int {
         case name
+        case overview
         case address
         case phone
         case website
@@ -38,6 +39,7 @@ class SchoolDetailsViewModel: NSObject {
             switch self {
             // Use Internationalization, as appropriate.
             case .name: return "Name"
+            case .overview: return "Overview"
             case .address: return "Address"
             case .phone: return "Phone"
             case .website: return "Website"
@@ -45,7 +47,7 @@ class SchoolDetailsViewModel: NSObject {
         }
 
         static var count: Int {
-            return 4
+            return 5
         }
     }
 
@@ -81,6 +83,10 @@ class SchoolDetailsViewModel: NSObject {
     // MARK: Custom methods
     func name() -> String? {
         return _school!.schoolName
+    }
+    
+    func overview() -> String? {
+        return _school!.overviewParagraph
     }
     
     func address() -> String? {

@@ -33,20 +33,6 @@ class SchoolsMapViewController: UIViewController {
         
         viewModel.fetchData()
         addPinsToMap()
-        
-        
-        // center map to Central Park, NY
-        var center = CLLocationCoordinate2D(latitude: 40.785091, longitude: -73.968285)
-        var region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
-        
-        // if we have a schoolName location, center to it
-        if schoolName.count > 0 {
-            if let school = viewModel.allObjects()?.first {
-                center = CLLocationCoordinate2D(latitude: school.latitude, longitude: school.longitude)
-                region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
-            }
-        }
-        mapView.setRegion(region, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -90,6 +76,18 @@ class SchoolsMapViewController: UIViewController {
             }
         }
         
+        // center map to Central Park, NY
+        var center = CLLocationCoordinate2D(latitude: 40.785091, longitude: -73.968285)
+        var region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        
+        // if we have a schoolName location, center to it
+        if schoolName.count > 0 {
+            if let school = viewModel.allObjects()?.first {
+                center = CLLocationCoordinate2D(latitude: school.latitude, longitude: school.longitude)
+                region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
+            }
+        }
+        mapView.setRegion(region, animated: true)
     }
 
     func fetchData() {

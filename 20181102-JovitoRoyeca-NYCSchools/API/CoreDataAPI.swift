@@ -77,14 +77,6 @@ class CoreDataAPI: NSObject {
                             t["nameSection"] = prefix.uppercased().folding(options: .diacriticInsensitive, locale: .current)
                             t[k] = v
                         }
-                    } else if k == "latitude" {
-                        if let latitude = v as? Double {
-                            t[k] = latitude
-                        }
-                    } else if k == "longitude" {
-                        if let longitude = v as? Double {
-                            t[k] = longitude
-                        }
                     } else {
                         t[k] = v
                     }
@@ -124,39 +116,36 @@ class CoreDataAPI: NSObject {
      * Save JSON to Core Data
      */
     func saveSATResults(json: [[String: Any]]) {
-//        return Promise { seal  in
-            let context = dataStack!.mainContext
-            let request: NSFetchRequest<School> = School.fetchRequest()
+        let context = dataStack!.mainContext
+        let request: NSFetchRequest<School> = School.fetchRequest()
+        
+        for satResult in json {
+            if let dbn = satResult["dbn"] as? String,
+                let numOfSatTestTakers = satResult["num_of_sat_test_takers"] as? String,
+                let satCriticalReadingAvgScore = satResult["sat_critical_reading_avg_score"] as? String,
+                let satMathAvgScore = satResult["sat_math_avg_score"] as? String,
+                let satWritingAvgScore = satResult["sat_writing_avg_score"] as? String,
+                let schoolName = satResult["school_name"] as? String {
             
-            for satResult in json {
-                if let dbn = satResult["dbn"] as? String,
-                    let numOfSatTestTakers = satResult["num_of_sat_test_takers"] as? String,
-                    let satCriticalReadingAvgScore = satResult["sat_critical_reading_avg_score"] as? String,
-                    let satMathAvgScore = satResult["sat_math_avg_score"] as? String,
-                    let satWritingAvgScore = satResult["sat_writing_avg_score"] as? String,
-                    let schoolName = satResult["school_name"] as? String {
-                
-                    if let desc = NSEntityDescription.entity(forEntityName: "SATResult", in: context),
-                        let s = NSManagedObject(entity: desc, insertInto: context) as? SATResult {
-                        s.dbn = dbn
-                        s.numOfSatTestTakers = numOfSatTestTakers
-                        s.satCriticalReadingAvgScore = satCriticalReadingAvgScore
-                        s.satMathAvgScore = satMathAvgScore
-                        s.satWritingAvgScore = satWritingAvgScore
-                        s.schoolName = schoolName
-                        
-                        // add school relationship
-                        request.predicate = NSPredicate(format: "dbn = %@", dbn)
-                        if let school = try! context.fetch(request).first {
-                            s.school = school
-                        }
+                if let desc = NSEntityDescription.entity(forEntityName: "SATResult", in: context),
+                    let s = NSManagedObject(entity: desc, insertInto: context) as? SATResult {
+                    s.dbn = dbn
+                    s.numOfSatTestTakers = numOfSatTestTakers
+                    s.satCriticalReadingAvgScore = satCriticalReadingAvgScore
+                    s.satMathAvgScore = satMathAvgScore
+                    s.satWritingAvgScore = satWritingAvgScore
+                    s.schoolName = schoolName
+                    
+                    // add school relationship
+                    request.predicate = NSPredicate(format: "dbn = %@", dbn)
+                    if let school = try! context.fetch(request).first {
+                        s.school = school
                     }
                 }
             }
-            
-            try! context.save()
-//            seal.fulfill(())
-//        }
+        }
+        
+        try! context.save()
     }
 
     /*

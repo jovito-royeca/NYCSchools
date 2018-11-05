@@ -70,6 +70,14 @@ extension SchoolDetailsViewController : UITableViewDataSource {
                     label.font = UIFont.boldSystemFont(ofSize: 20)
                 }
                 cell?.accessoryType = .none
+            
+            case SchoolDetailsViewModel.SchoolDetails.overview.rawValue:
+                cell = tableView.dequeueReusableCell(withIdentifier: "DynamicHeightCell",
+                                                     for: indexPath)
+                if let label = cell?.viewWithTag(100) as? UILabel {
+                    label.text = viewModel.overview()
+                }
+                cell?.accessoryType = .none
                 
             case SchoolDetailsViewModel.SchoolDetails.address.rawValue:
                 cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell",
