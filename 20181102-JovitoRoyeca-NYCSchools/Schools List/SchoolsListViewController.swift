@@ -41,42 +41,18 @@ class SchoolsListViewController: UIViewController {
         viewModel.fetchData()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        if viewModel.isEmpty() {
-            loadData()
-        }
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: Custom methods
-    func loadData() {
-        let webService = WebServiceAPI()
-        
-        MBProgressHUD.showAdded(to: self.view, animated: true)
-        firstly {
-            webService.fetchSchools()
-        }.then { (topics: [[String: Any]]) in
-                CoreDataAPI.sharedInstance.save(topics)
-        }.done {
-            self.viewModel.fetchData()
-            self.tableView.reloadData()
-            MBProgressHUD.hide(for: self.view, animated: true)
-        }.catch { error in
-            print("\(error)")
+        if segue.identifier == "showDetails" {
+            guard let dest = segue.destination as? SchoolDetailsViewController,
+                let school = sender as? School else {
+                return
+            }
+            
+            let viewModel = SchoolDetailsViewModel(withSchool: school)
+            dest.viewModel = viewModel
         }
     }
-    
+
     @objc func doSearch() {
         viewModel.queryString = searchController.searchBar.text ?? ""
         viewModel.fetchData()

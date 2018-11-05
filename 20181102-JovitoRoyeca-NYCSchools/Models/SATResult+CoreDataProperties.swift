@@ -23,6 +23,6 @@ extension SATResult {
     @NSManaged public var satWritingAvgScore: String?
     @NSManaged public var schoolName: String?
     @NSManaged public var dbn: String?
-    @NSManaged public var school: SATResult?
+    @NSManaged public var school: School?
 
 }

@@ -12,7 +12,7 @@
         <attribute name="satMathAvgScore" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="satWritingAvgScore" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="schoolName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="school" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SATResult" inverseName="school" inverseEntity="SATResult" syncable="YES"/>
+        <relationship name="school" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="School" inverseName="satResult" inverseEntity="School" syncable="YES"/>
     </entity>
     <entity name="School" representedClassName="School" syncable="YES">
         <attribute name="academicOpportunities1" optional="YES" attributeType="String" syncable="YES"/>
@@ -80,7 +80,7 @@
         <attribute name="totalStudents" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="satResult" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SATResult" syncable="YES"/>
+        <relationship name="satResult" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SATResult" inverseName="school" inverseEntity="SATResult" syncable="YES"/>
     </entity>
     <elements>
         <element name="SATResult" positionX="-54" positionY="-9" width="128" height="150"/>

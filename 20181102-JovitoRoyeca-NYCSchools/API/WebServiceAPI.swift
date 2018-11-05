@@ -24,7 +24,7 @@ enum Error: Swift.Error {
  */
 class WebServiceAPI: NSObject {
     /*
-     * Load schools from WebService
+     * Fetch schools from WebService
      */
     func fetchSchools() -> Promise<[[String: Any]]> {
         return Promise { seal  in
@@ -49,7 +49,7 @@ class WebServiceAPI: NSObject {
     }
     
     /*
-     * Load SAT results from WebService
+     * Fetch SAT results from WebService
      */
     func fetchSATResults() -> Promise<[[String: Any]]> {
         return Promise { seal  in
@@ -63,12 +63,12 @@ class WebServiceAPI: NSObject {
             
             firstly {
                 URLSession.shared.dataTask(.promise, with: rq)
-                }.compactMap {
-                    try JSONSerialization.jsonObject(with: $0.data) as? [[String: Any]]
-                }.done { json in
-                    seal.fulfill(json)
-                }.catch { error in
-                    seal.reject(error)
+            }.compactMap {
+                try JSONSerialization.jsonObject(with: $0.data) as? [[String: Any]]
+            }.done { json in
+                seal.fulfill(json)
+            }.catch { error in
+                seal.reject(error)
             }
         }
     }
