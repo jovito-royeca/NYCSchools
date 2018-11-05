@@ -2,6 +2,7 @@
 
 ## Coding Challenge: NYC Schools
 GOAL: Verify candidate can provide a technical solution and follow instructions
+
 REQUIREMENTS:
 
 These requirements are rather high-level and vague. If details are omitted, it is because we will be happy with any of a wide variety of solutions. Don't worry about finding "the" solution. Feel free to be creative with the requirements. Your goal is to impress (but do so with clean code).
