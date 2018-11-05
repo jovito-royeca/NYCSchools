@@ -10,6 +10,8 @@ import CoreData
 
 class SchoolsMapViewModel: NSObject {
     // MARK: variables
+    var queryString = ""
+    
     private var _fetchedResultsController: NSFetchedResultsController<School>?
     private var _sortDescriptors = [NSSortDescriptor(key: "schoolName", ascending: true)]
     
@@ -42,7 +44,15 @@ class SchoolsMapViewModel: NSObject {
      */
     func fetchData() {
         let request: NSFetchRequest<School> = School.fetchRequest()
+        let count = queryString.count
         
+        if count > 0 {
+            if count == 1 {
+                request.predicate = NSPredicate(format: "schoolName BEGINSWITH[cd] %@", queryString, queryString)
+            } else {
+                request.predicate = NSPredicate(format: "schoolName CONTAINS[cd] %@", queryString, queryString)
+            }
+        }
         request.sortDescriptors = _sortDescriptors
         _fetchedResultsController = getFetchedResultsController(with: request)
     }

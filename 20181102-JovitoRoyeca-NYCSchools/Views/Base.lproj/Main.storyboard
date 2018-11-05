@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cne-AP-lrN">
-                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,7 +96,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FiP-Yi-EUc">
-                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DynamicHeightCell" rowHeight="88" id="Qyg-lW-waO">
@@ -179,6 +179,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="VHh-gm-BYY" id="9Sm-hx-FDy"/>
+                                    <outlet property="delegate" destination="VHh-gm-BYY" id="4br-tr-nXY"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -192,6 +193,9 @@
                         <viewLayoutGuide key="safeArea" id="YAR-gZ-s2m"/>
                     </view>
                     <navigationItem key="navigationItem" title="School Details" id="dB5-cL-lA0"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showMap" id="7Hp-jB-A3a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6DO-LO-APg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,5 +261,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="hiN-a6-0O5"/>
+        <segue reference="7Hp-jB-A3a"/>
     </inferredMetricsTieBreakers>
 </document>

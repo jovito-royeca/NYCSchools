@@ -18,7 +18,8 @@ class SchoolsMapViewController: UIViewController {
 
     // MARK: Variables
     let viewModel = SchoolsMapViewModel()
-    
+    var schoolName = ""
+
     // MARK: Outlets
     @IBOutlet weak var mapView: MKMapView!
     
@@ -27,15 +28,25 @@ class SchoolsMapViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        viewModel.fetchData()
-        
-        // ceter map to Central Park, NY
-        let center = CLLocationCoordinate2D(latitude: 40.785091, longitude: -73.968285)
-        let region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
-        mapView.setRegion(region, animated: true)
         mapView.delegate = self
+        viewModel.queryString = schoolName
         
+        viewModel.fetchData()
         addPinsToMap()
+        
+        
+        // center map to Central Park, NY
+        var center = CLLocationCoordinate2D(latitude: 40.785091, longitude: -73.968285)
+        var region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        
+        // if we have a schoolName location, center to it
+        if schoolName.count > 0 {
+            if let school = viewModel.allObjects()?.first {
+                center = CLLocationCoordinate2D(latitude: school.latitude, longitude: school.longitude)
+                region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
+            }
+        }
+        mapView.setRegion(region, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {

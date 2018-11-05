@@ -19,6 +19,17 @@ class SchoolDetailsViewController: UIViewController {
     }
     
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap" {
+            guard let dest = segue.destination as? SchoolsMapViewController,
+                let schoolName = sender as? String else {
+                return
+            }
+            
+            dest.schoolName = schoolName
+        }
+    }
+
     /*
     // MARK: - Navigation
 
@@ -58,6 +69,8 @@ extension SchoolDetailsViewController : UITableViewDataSource {
                     label.text = viewModel.name()
                     label.font = UIFont.boldSystemFont(ofSize: 20)
                 }
+                cell?.accessoryType = .none
+                
             case SchoolDetailsViewModel.SchoolDetails.address.rawValue:
                 cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell",
                                                      for: indexPath)
@@ -70,6 +83,8 @@ extension SchoolDetailsViewController : UITableViewDataSource {
                                                               size: CGSize(width: 20, height: 20))
                     textLabel.text = viewModel.address()
                 }
+                cell?.accessoryType = .disclosureIndicator
+                
             case SchoolDetailsViewModel.SchoolDetails.phone.rawValue:
                 cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell",
                                                      for: indexPath)
@@ -82,6 +97,8 @@ extension SchoolDetailsViewController : UITableViewDataSource {
                                                               size: CGSize(width: 20, height: 20))
                     textLabel.text = viewModel.phone()
                 }
+                cell?.accessoryType = .disclosureIndicator
+                
             case SchoolDetailsViewModel.SchoolDetails.website.rawValue:
                 cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell",
                                                      for: indexPath)
@@ -94,6 +111,8 @@ extension SchoolDetailsViewController : UITableViewDataSource {
                                                               size: CGSize(width: 20, height: 20))
                     textLabel.text = viewModel.website()
                 }
+                cell?.accessoryType = .disclosureIndicator
+                
             default:
                 ()
             }
@@ -104,21 +123,25 @@ extension SchoolDetailsViewController : UITableViewDataSource {
                                                      for: indexPath)
                 cell?.textLabel?.text = SchoolDetailsViewModel.SATDetails.takers.description
                 cell?.detailTextLabel?.text = viewModel.numberOfSATTakers()
+                
             case SchoolDetailsViewModel.SATDetails.mathematics.rawValue:
                 cell = tableView.dequeueReusableCell(withIdentifier: "RightDetailCell",
                                                      for: indexPath)
                 cell?.textLabel?.text = SchoolDetailsViewModel.SATDetails.mathematics.description
                 cell?.detailTextLabel?.text = viewModel.mathScore()
+                
             case SchoolDetailsViewModel.SATDetails.reading.rawValue:
                 cell = tableView.dequeueReusableCell(withIdentifier: "RightDetailCell",
                                                      for: indexPath)
                 cell?.textLabel?.text = SchoolDetailsViewModel.SATDetails.reading.description
                 cell?.detailTextLabel?.text = viewModel.readingScore()
+                
             case SchoolDetailsViewModel.SATDetails.writing.rawValue:
                 cell = tableView.dequeueReusableCell(withIdentifier: "RightDetailCell",
                                                      for: indexPath)
                 cell?.textLabel?.text = SchoolDetailsViewModel.SATDetails.writing.description
                 cell?.detailTextLabel?.text = viewModel.writingScore()
+                
             default:
                 ()
             }
@@ -135,5 +158,61 @@ extension SchoolDetailsViewController : UITableViewDataSource {
 extension SchoolDetailsViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case SchoolDetailsViewModel.Sections.school.rawValue:
+            switch indexPath.row {
+            case SchoolDetailsViewModel.SchoolDetails.address.rawValue:
+                performSegue(withIdentifier: "showMap", sender: viewModel.name())
+                
+            case SchoolDetailsViewModel.SchoolDetails.phone.rawValue:
+                // call phone number
+                if let phone = viewModel.phone(),
+                    let url = URL(string: "tel://\(phone)"),
+                    UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                }
+                
+            case SchoolDetailsViewModel.SchoolDetails.website.rawValue:
+                // open website
+                if let website = viewModel.website(),
+                    let url = URL(string: "http://\(website)"),
+                    UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                }
+                
+            default:
+                ()
+            }
+        default:
+            ()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        var path: IndexPath?
+        
+        switch indexPath.section {
+        case SchoolDetailsViewModel.Sections.school.rawValue:
+            switch indexPath.row {
+            case SchoolDetailsViewModel.SchoolDetails.address.rawValue:
+                path = indexPath
+                
+            case SchoolDetailsViewModel.SchoolDetails.phone.rawValue:
+                path = indexPath
+                
+            case SchoolDetailsViewModel.SchoolDetails.website.rawValue:
+                path = indexPath
+                
+            default:
+                return nil
+            }
+        default:
+            ()
+        }
+        
+        return path
     }
 }
