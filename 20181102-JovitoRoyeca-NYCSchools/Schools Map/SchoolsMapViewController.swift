@@ -74,20 +74,20 @@ class SchoolsMapViewController: UIViewController {
                 annotation.title = school.schoolName
                 mapView.addAnnotation(annotation)
             }
-        }
-        
-        // center map to Central Park, NY
-        var center = CLLocationCoordinate2D(latitude: 40.785091, longitude: -73.968285)
-        var region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
-        
-        // if we have a schoolName location, center to it
-        if schoolName.count > 0 {
-            if let school = viewModel.allObjects()?.first {
-                center = CLLocationCoordinate2D(latitude: school.latitude, longitude: school.longitude)
-                region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
+            
+            // center map to Central Park, NY
+            var center = CLLocationCoordinate2D(latitude: 40.785091, longitude: -73.968285)
+            var region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
+            
+            // if we have a schoolName location, center to it
+            if schoolName.count > 0 {
+                if let school = viewModel.allObjects()?.first {
+                    center = CLLocationCoordinate2D(latitude: school.latitude, longitude: school.longitude)
+                    region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
+                }
             }
+            mapView.setRegion(region, animated: true)
         }
-        mapView.setRegion(region, animated: true)
     }
 
     func fetchData() {
@@ -110,8 +110,8 @@ class SchoolsMapViewController: UIViewController {
         }.done {
             CoreDataAPI.sharedInstance.saveSATResults(json: satResults)
             self.viewModel.fetchData()
-            self.addPinsToMap()
             MBProgressHUD.hide(for: self.view, animated: true)
+            self.addPinsToMap()
         }.catch { error in
             print("\(error)")
             MBProgressHUD.hide(for: self.view, animated: true)
